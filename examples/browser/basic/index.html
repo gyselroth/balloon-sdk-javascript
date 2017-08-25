@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+    <title>Balloon JavaScript SDK</title>
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=cyrillic">
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/__build__/balloon.js"></script>
+    <script src="./demo.js"></script>
+
+    <link rel="icon" sizes="32x32" href="/favicon-32.png">
+    <link rel="favicon" href="/favicon.ico">
+    <link rel="favicon-32" sizes="32x32" href="/favicon-32.png">
+</head>
+<body>
+    <header>
+        <div class="bln-brand">
+            <div class="bln-icon bln-icon-logo"></div>
+            <div class="bln-brand-text">Balloon</div>
+        </div>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="/"><h1>JavaScript SDK Examples</h1></a>
+                </li>
+                <li>&nbsp;/&nbsp;basic</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section role="main">
+        <!-- TODO pixtron - link to the docs-->
+        <p>This example fetches the collections of your root Balloon directory. It uses the <code>Balloon.collection.getChildren()</code> method</p>
+
+        <form onSubmit="listCollections(); return false">
+            <label for="baseUrl">
+                <span>Base URL</span>
+                <input type="text" id="baseUrl" value="https://localhost:8081" />
+            </label>
+            <label for="username">
+                <span>Username</span>
+                <input type="text" id="username" placeholder="Username" />
+            </label>
+            <label for="password">
+                <span>Password</span>
+                <input type="password" id="password" placeholder="Password" />
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+
+        <ul id="collections" class="bln-node-list"></ul>
+    </section>
+</body>
+</html>

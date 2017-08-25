@@ -1,0 +1,13 @@
+{
+  "root": true,
+  "extends": "airbnb-base/legacy",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "func-names": 0
+  },
+  "overrides": {
+    "excludedFiles": "examples/browser/server.js"
+  }
+}

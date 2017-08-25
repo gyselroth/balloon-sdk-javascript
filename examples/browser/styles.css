@@ -1,0 +1,121 @@
+.bln-icon {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url(./icons.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  opacity: 0.72;
+  transition: all 0.2s;
+  background-position: 0 0;
+}
+
+.bln-icon-logo {
+  background-position-y: calc(171 * -24px);
+}
+
+.bln-icon-collection {
+  background-position-y: calc(162 * -24px);
+}
+
+body {
+  font-size: 13px;
+  font-family: Ubuntu, arial, verdana, sans-serif;
+  background-color: #fff;
+}
+
+a {
+  color: #000;
+}
+
+header {
+  position: relative;
+  background-color: #000;
+  height: 50px;
+  overflox-y: hidden;
+}
+
+header,
+header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .bln-icon-logo {
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  filter: invert(100%);
+  opacity: 1;
+}
+
+header .bln-brand-text {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  line-height: 50px;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  line-height: 50px;
+
+  font-size: 1em;
+}
+
+header nav ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+header nav ul li {
+  float: left;
+  font-weight: 400;
+}
+
+header nav h1 {
+  margin: 0;
+  font-size: 1em;
+  font-weight: 400;
+}
+
+section[role=main] {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 960px;
+}
+
+label {
+  margin-bottom: 15px;
+  display: block;
+}
+
+label span {
+  display: block;
+  width: 70px;
+  font-weight: bold;
+}
+
+.bln-node-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.bln-node-list li {
+  clear: both;
+}
+
+.bln-node-icon {
+  float: left;
+  margin-top: -2px;
+}
+
+.bln-node-text {
+  display: inline-block;
+  float: left;
+  line-height: 20px;
+}

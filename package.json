@@ -1,0 +1,52 @@
+{
+  "name": "@gyselroth/balloon-sdk-javascript",
+  "version": "0.0.1",
+  "description": "A javascript SDK for balloon DMS",
+  "main": "./src/lib/balloon-node.js",
+  "browser": {
+    "./src/lib/balloon-node.js": "./src/lib/balloon-client.js",
+    "./src/BalloonRequest.js": "./src/BalloonRequestClient.js",
+    "./src/lib/base64.js": "./src/lib/base64-client.js"
+  },
+  "scripts": {
+    "build": "npm test && webpack",
+    "lint": "eslint . --format=node_modules/eslint-formatter-pretty",
+    "mocha": "mocha",
+    "start": "node examples/server.js",
+    "test": "npm run lint && mocha"
+  },
+  "keywords": [
+    "API",
+    "SDK",
+    "balloon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gyselroth/balloon-sdk-javascript.git"
+  },
+  "author": "Stefan Aebischer <os@pixtron.ch>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "chai": "^4.1.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-formatter-pretty": "^1.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "proxyquire": "^1.8.0",
+    "prompt": "^1.0.0",
+    "sinon": "^3.0.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.4.1",
+    "webpack-dev-middleware": "^1.11.0"
+  },
+  "dependencies": {
+    "component-emitter": "^1.2.1",
+    "prompt": "^1.0.0",
+    "superagent": "^3.5.2"
+  }
+}
